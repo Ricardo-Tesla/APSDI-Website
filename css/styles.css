@@ -984,3 +984,161 @@ button:focus-visible {
     width: 100%;
   }
 }
+/* ==========================================================================
+   Inner pages — About, Programs, Strategic Plan, Team, Contact
+   Small additions only; everything reuses the existing tokens and components.
+   ========================================================================== */
+
+/* Anchor links land below the sticky header */
+[id] { scroll-margin-top: calc(var(--header-height-condensed) + 1.5rem); }
+
+/* Current page in the menu */
+.nav-link[aria-current="page"] {
+  color: var(--color-ink);
+  background: var(--color-parchment-dim);
+}
+
+/* Text-only page intro (reuses .hero typography) */
+.page-hero {
+  padding: 4rem 1.5rem 3.5rem;
+  border-bottom: 1px solid var(--color-mist);
+}
+.page-hero .hero-inner { grid-template-columns: 1fr; }
+.page-hero .hero-title { max-width: 22ch; }
+.page-hero .hero-lead { max-width: 64ch; }
+
+/* Alternate pale-blue section background (same as .mission) */
+.section-alt {
+  background: var(--color-parchment-dim);
+  border-top: 1px solid var(--color-mist);
+}
+
+/* Two-column card grid for longer card content */
+.programs-grid-2 { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 700px) {
+  .programs-grid-2 { grid-template-columns: 1fr; }
+}
+.thematic-card .program-desc { flex-grow: 0; }
+.thematic-card .program-desc:last-child { margin-bottom: 0; }
+
+/* Strategic plan: general objective block above the cards */
+.strategic-objective {
+  max-width: 72ch;
+  margin: 0 0 2rem;
+}
+
+/* Program detail cards (Programs page) */
+.program-detail-list {
+  display: grid;
+  gap: 1.5rem;
+}
+.program-detail {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2.5rem;
+  align-items: start;
+  padding: 2.25rem 2rem;
+}
+.program-detail:hover { transform: none; }
+.program-detail--text { grid-template-columns: 1fr; }
+.program-detail .program-title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  margin-bottom: 0.85rem;
+}
+.program-detail .program-desc {
+  font-size: var(--text-base);
+  line-height: 1.7;
+  max-width: 68ch;
+}
+.program-detail .program-desc:last-child { margin-bottom: 0; }
+
+.program-figures {
+  display: grid;
+  gap: 1.25rem;
+}
+.program-figure { margin: 0; }
+.program-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  background: var(--color-parchment-dim);
+}
+.program-figure figcaption {
+  margin-top: 0.5rem;
+  font-size: var(--text-xs);
+  line-height: 1.5;
+  color: var(--color-ink-soft);
+}
+
+/* Cards with several paragraphs (Contact page) */
+.governance-desc + .governance-desc { margin-top: 0.85rem; }
+
+@media (max-width: 900px) {
+  .program-detail {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    padding: 1.75rem 1.5rem;
+  }
+}
+
+/* ==========================================================================
+   Fixes for small screens (pre-existing layout issues)
+   ========================================================================== */
+
+/* "Who we are" photo: keep the 480×600 frame on desktop, shrink with the
+   column on tablets and phones instead of overflowing the screen. */
+.mission-photo {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+}
+@media (max-width: 900px) {
+  .mission-photo { aspect-ratio: 4 / 5; }
+}
+
+/* Phones: hide the long tagline (as the header already does on scroll) so the
+   menu button stays fully on screen. */
+@media (max-width: 560px) {
+  .brand-tagline { display: none; }
+  .header-inner { gap: 1rem; }
+}
+
+/* Phone menu: dropdown rows (About, Programs) span the full width like the others */
+@media (max-width: 900px) {
+  .nav-dropdown-trigger { width: 100%; }
+}
+
+/* ==========================================================================
+   Photo slots (filled by js/main.js once the photo file exists)
+   ========================================================================== */
+[hidden] { display: none !important; }
+
+/* Program card switches to the photo layout when its photo arrives */
+.program-detail--text.has-photo { grid-template-columns: 1.15fr 0.85fr; }
+@media (max-width: 900px) {
+  .program-detail--text.has-photo { grid-template-columns: 1fr; }
+}
+
+/* Team: round photo replaces the person icon */
+.team-photo img {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin-bottom: 1.1rem;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--color-parchment-dim);
+}
+.has-photo .team-icon { display: none; }
+
+/* Home hero and "Who we are": text spans the full width until their photo exists */
+.hero-inner[data-photo-host]:not(.has-photo),
+.mission-inner[data-photo-host]:not(.has-photo) {
+  grid-template-columns: 1fr;
+}
+.hero-inner[data-photo-host]:not(.has-photo) .hero-title { max-width: 18ch; }
+.mission-inner[data-photo-host]:not(.has-photo) .mission-objective { max-width: 72ch; }

@@ -89,3 +89,38 @@
     }
   });
 })();
+/* ---- Photo spaces: a photo appears only once its file has been added ----
+   Elements with data-photo="path.jpg" stay hidden until that file loads, so
+   missing photos never leave a gap or a broken-image icon. Add the file with
+   the expected name and it appears; the surrounding layout adapts. */
+(() => {
+  'use strict';
+
+  document.querySelectorAll('[data-photo]').forEach((slot) => {
+    const d = slot.dataset;
+    const img = new Image();
+    img.decoding = 'async';
+    img.alt = d.alt || '';
+    if (d.class) img.className = d.class;
+    if (d.width) img.width = Number(d.width);
+    if (d.height) img.height = Number(d.height);
+    if (d.priority) img.fetchPriority = d.priority;
+
+    img.addEventListener('load', () => {
+      slot.prepend(img);
+      if (d.caption) {
+        const cap = document.createElement('figcaption');
+        cap.textContent = d.caption;
+        slot.append(cap);
+      }
+      // Reveal the space and any hidden wrappers (up to its card / section)
+      for (let el = slot; el && el !== document.body && !el.hasAttribute('data-photo-host'); el = el.parentElement) {
+        el.hidden = false;
+      }
+      const host = slot.closest('[data-photo-host]');
+      if (host) host.classList.add('has-photo');
+    }, { once: true });
+
+    img.src = d.photo;
+  });
+})();

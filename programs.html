@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Core -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Programs | APSDI</title>
+  <meta name="description"
+    content="APSDI runs eight integrated programs in the DRC: health, GBV response, peace and regional integration, food security, WASH, natural resources, economic empowerment and R&D advisory.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon / app icons -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#16232E">
+
+  <!-- Open Graph / social sharing (og:image and canonical become full URLs once the domain is set) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="APSDI">
+  <meta property="og:title" content="Our Programs | APSDI">
+  <meta property="og:description" content="APSDI runs eight integrated programs in the DRC: health, GBV response, peace and regional integration, food security, WASH, natural resources, economic empowerment and R&D advisory.">
+  <meta property="og:image" content="assets/og-cover.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts: preconnect first, then a single stylesheet request -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Deferred JS — parsed but executed after DOM, no render block -->
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+
+      <a href="index.html" class="brand" aria-label="APSDI home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="36" height="36">
+            <path d="M20 2 C20 2 6 14 6 24 A14 14 0 0 0 34 24 C34 14 20 2 20 2 Z" fill="none" stroke="currentColor"
+              stroke-width="2" />
+            <path d="M20 12 C20 12 12 19 12 25 A8 8 0 0 0 28 25 C28 19 20 12 20 12 Z" fill="currentColor" />
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">APSDI</span>
+          <span class="brand-tagline">Peace · Health · Integrated Development</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul class="nav-list">
+
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-controls="dropdown-about">
+              About
+              <svg class="chevron" viewBox="0 0 12 8" width="10" height="7" aria-hidden="true">
+                <path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" />
+              </svg>
+            </button>
+            <div class="dropdown" id="dropdown-about">
+              <a href="about.html#who-we-are" class="dropdown-link">
+                <span class="dropdown-link-title">Who We Are</span>
+                <span class="dropdown-link-desc">Legal status, mandate and identity</span>
+              </a>
+              <a href="about.html#vision-mission" class="dropdown-link">
+                <span class="dropdown-link-title">Vision &amp; Mission</span>
+                <span class="dropdown-link-desc">What we're working toward</span>
+              </a>
+              <a href="about.html#core-values" class="dropdown-link">
+                <span class="dropdown-link-title">Core Values</span>
+                <span class="dropdown-link-desc">The principles behind our work</span>
+              </a>
+              <a href="about.html#governance" class="dropdown-link">
+                <span class="dropdown-link-title">Governance</span>
+                <span class="dropdown-link-desc">Board, assembly &amp; oversight</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-controls="dropdown-programs" aria-current="page">
+              Programs
+              <svg class="chevron" viewBox="0 0 12 8" width="10" height="7" aria-hidden="true">
+                <path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" />
+              </svg>
+            </button>
+            <div class="dropdown" id="dropdown-programs">
+              <a href="programs.html#peace-governance" class="dropdown-link">
+                <span class="dropdown-link-title">Peace &amp; Governance</span>
+                <span class="dropdown-link-desc">Social cohesion, protection, regional integration</span>
+              </a>
+              <a href="programs.html#health-nutrition" class="dropdown-link">
+                <span class="dropdown-link-title">Health &amp; Nutrition</span>
+                <span class="dropdown-link-desc">Community health, food security, WASH</span>
+              </a>
+              <a href="programs.html#environment-livelihoods" class="dropdown-link">
+                <span class="dropdown-link-title">Environment &amp; Livelihoods</span>
+                <span class="dropdown-link-desc">Natural resources, SMEs, digital inclusion</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="programs.html" class="dropdown-link dropdown-link-all">
+                <span class="dropdown-link-title">View all programs →</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="strategic-plan.html" class="nav-link">Strategic Plan</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="team.html" class="nav-link">Team</a>
+          </li>
+
+          <!-- Publications: hidden until there are reports to share.
+          <li class="nav-item">
+            <a href="publications.html" class="nav-link">Publications</a>
+          </li>
+          -->
+
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <a href="contact.html" class="btn btn-cta nav-cta">Partner With Us</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero page-hero" id="top">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Our Programs</p>
+          <h1 class="hero-title">Eight programs, one integrated approach.</h1>
+          <p class="hero-lead">
+            Every program feeds the next — health outcomes improve food security, food security stabilises livelihoods, and stable livelihoods make peace easier to sustain.
+          </p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg">Partner on a Program</a>
+            <a href="strategic-plan.html" class="btn btn-ghost btn-lg">See Our Strategic Plan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="programs" id="peace-governance">
+      <div class="programs-inner">
+
+        <div class="section-heading">
+          <p class="eyebrow">Peace &amp; Governance</p>
+          <h2 class="section-title">Social cohesion, protection and regional integration.</h2>
+        </div>
+
+        <div class="program-detail-list">
+
+          <article class="program-card program-detail program-detail--text" id="gbv-response" data-photo-host>
+            <div class="program-detail-text">
+              <svg class="program-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.5 20 6v6c0 5-3.5 8.5-8 9.5-4.5-1-8-4.5-8-9.5V6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+            </svg>
+              <h3 class="program-title">Social Protection &amp; GBV Response</h3>
+              <p class="program-desc">We provide multidisciplinary support encompassing medical, psychosocial, legal and financial assistance for survivors of gender-based violence (GBV). This intervention specifically targets the most marginalised groups, including internally displaced persons (IDPs), refugees and people with disabilities, ensuring their safety and reintegration into society.</p>
+            </div>
+            <div class="program-figures" hidden>
+              <figure class="program-figure" data-photo="./assets/images/programs/gbv-response.jpg"
+                data-alt="Social Protection and GBV Response program" hidden></figure>
+            </div>
+          </article>
+          <article class="program-card program-detail program-detail--text" id="peace-cohesion" data-photo-host>
+            <div class="program-detail-text">
+              <svg class="program-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="9" cy="12" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6" /><circle cx="15" cy="12" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6" />
+            </svg>
+              <h3 class="program-title">Peace, Culture, Social Cohesion &amp; Regional Integration (PCSCRI)</h3>
+              <p class="program-desc">The program is designed to achieve sustainable peace and stability through regional cooperation and coordination. It addresses transnational security threats by strengthening regional organisations and providing tools for nonviolent engagement in conflict.</p>
+              <p class="program-desc">Focused on women and youth, PCSCRI uses workshops, discussion groups and films to share the power of nonviolence and foster social cohesion within the Great Lakes region. This reinforces APSDI&#8217;s statutory mission to transform regional diversity into a source of strength through dialogue, mediation and the protection of human rights.</p>
+            </div>
+            <div class="program-figures" hidden>
+              <figure class="program-figure" data-photo="./assets/images/programs/peace-cohesion.jpg"
+                data-alt="Peace, Culture, Social Cohesion and Regional Integration program" hidden></figure>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="programs section-alt" id="health-nutrition">
+      <div class="programs-inner">
+
+        <div class="section-heading">
+          <p class="eyebrow">Health &amp; Nutrition</p>
+          <h2 class="section-title">Community health, food security and WASH.</h2>
+        </div>
+
+        <div class="program-detail-list">
+
+          <article class="program-card program-detail program-detail--text" id="health" data-photo-host>
+            <div class="program-detail-text">
+              <svg class="program-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="1.6" /><path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+            </svg>
+              <h3 class="program-title">Health</h3>
+              <p class="program-desc">APSDI implements multisectoral health interventions to reduce communities&#8217; vulnerability to pests and infectious diseases through intensified prevention and awareness campaigns. By deploying community health workers, the organisation strengthens referral and counter-referral systems to professional healthcare structures.</p>
+              <p class="program-desc">APSDI also provides essential medical and psychosocial assistance to vulnerable groups and survivors of gender-based violence.</p>
+            </div>
+            <div class="program-figures" hidden>
+              <figure class="program-figure" data-photo="./assets/images/programs/health.jpg"
+                data-alt="Health program" hidden></figure>
+            </div>
+          </article>
+          <article class="program-card program-detail program-detail--text" id="food-security" data-photo-host>
+            <div class="program-detail-text">
+              <svg class="program-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 21V9M12 9c0-3.5-2-6-5-6 0 3.5 2 6 5 6zm0 0c0-3.5 2-6 5-6 0 3.5-2 6-5 6zM7 21h10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+              <h3 class="program-title">Food Security &amp; Nutrition-Sensitive Agriculture (FSNSA)</h3>
+              <p class="program-desc">The program targets the unacceptably high levels of malnutrition in rural areas, specifically stunting in children. APSDI uses it to build capacity in nutrition-sensitive agriculture through dietary diversity and the promotion of nutritious food intake.</p>
+              <p class="program-desc">By focusing on behaviour change and strengthening the capacity of value chain actors, FSNSA supports Farmer Field Schools and livestock management. A critical focus is combating chronic malnutrition in children under five and providing nutritional support to pregnant and breastfeeding women through a network of community health workers.</p>
+              <p class="program-desc">This approach transforms small-scale producers into commercial actors while ensuring that children under five and breastfeeding women receive the nutritional support they need to move beyond chronic vulnerability.</p>
+            </div>
+            <div class="program-figures" hidden>
+              <figure class="program-figure" data-photo="./assets/images/programs/food-security.jpg"
+                data-alt="Food Security and Nutrition-Sensitive Agriculture program" hidden></figure>
+            </div>
+          </article>
+          <article class="program-card program-detail program-detail--text" id="wash" data-photo-host>
+            <div class="program-detail-text">
+              <svg class="program-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.5c3 4 5.5 7.6 5.5 10.7a5.5 5.5 0 0 1-11 0c0-3.1 2.5-6.7 5.5-10.7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+            </svg>
+              <h3 class="program-title">Water, Sanitation &amp; Environmental Health (WSEH)</h3>
+              <p class="program-desc">The program addresses safe drinking water and sanitation as fundamental drivers of community health. Integrated into APSDI&#8217;s broader health work, WSEH engages in research and development for watershed management and water harvesting.</p>
+              <p class="program-desc">It runs literacy campaigns and environmental and sanitation education to combat environment-related diseases and waterborne infections, in line with APSDI&#8217;s statutory goal of improving access to drinking water and strengthening hygiene for vulnerable groups such as war-displaced persons and refugees in conflict areas.</p>
+            </div>
+            <div class="program-figures" hidden>
+              <figure class="program-figure" data-photo="./assets/images/programs/wash.jpg"
+                data-alt="Water, Sanitation and Environmental Health program" hidden></figure>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="programs" id="environment-livelihoods">
+      <div class="programs-inner">
+
+        <div class="section-heading">
+          <p class="eyebrow">Environment &amp; Livelihoods</p>
+          <h2 class="section-title">Natural resources, SMEs and digital inclusion.</h2>
+        </div>
+
+        <div class="program-detail-list">
+
+          <article class="program-card program-detail program-detail--text" id="environment" data-photo-host>
+            <div class="program-detail-text">
+              <svg class="program-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3C8 7 5 10.5 5 14.5A7 7 0 0 0 19 14.5C19 10.5 16 7 12 3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" /><path d="M12 21v-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+            </svg>
+              <h3 class="program-title">Natural Resources &amp; Environment Management (NREM)</h3>
+              <p class="program-desc">The program is a cornerstone of APSDI&#8217;s commitment to environmental stewardship and climate resilience. It offers innovative project development, research and technical assistance focused on the efficient use and conservation of bio-resources. Through capacity building and policy reviews on climate change and biodiversity, it carries out APSDI&#8217;s mandate to protect the sensitive ecosystems of the lake and river basins.</p>
+              <p class="program-desc">NREM also promotes renewable energy and sustainable technologies, supporting APSDI&#8217;s strategic goal of contributing to a circular economy and reducing the risk of natural disasters through awareness and demonstration programs. Interventions include watershed reforestation, soil conservation and disaster risk reduction to help communities adapt to climate change.</p>
+            </div>
+            <div class="program-figures" hidden>
+              <figure class="program-figure" data-photo="./assets/images/programs/environment.jpg"
+                data-alt="Natural Resources and Environment Management program" hidden></figure>
+              <figure class="program-figure" data-photo="./assets/images/programs/environment-2.jpg"
+                data-alt="Natural Resources and Environment Management program" hidden></figure>
+            </div>
+          </article>
+          <article class="program-card program-detail program-detail--text" id="economic-empowerment" data-photo-host>
+            <div class="program-detail-text">
+              <svg class="program-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="4" y="14" width="4" height="6" fill="none" stroke="currentColor" stroke-width="1.6" /><rect x="10" y="9" width="4" height="11" fill="none" stroke="currentColor" stroke-width="1.6" /><rect x="16" y="4" width="4" height="16" fill="none" stroke="currentColor" stroke-width="1.6" />
+            </svg>
+              <h3 class="program-title">Economic Empowerment &amp; SME Support (EESS)</h3>
+              <p class="program-desc">APSDI drives job creation for youth and women by facilitating the establishment of small and medium enterprises (SMEs) and agricultural cooperatives. Our bottom-up approach includes entrepreneurship training and the promotion of community savings and credit schemes to build local financial autonomy.</p>
+              <p class="program-desc">As a cross-cutting priority, APSDI promotes <strong>digital transformation and innovation</strong>, modernising local trade and agriculture by training SMEs and cooperatives in sustainable digital tools. We integrate innovative technologies into our internal management and community services to bridge the rural digital divide.</p>
+            </div>
+            <div class="program-figures" hidden>
+              <figure class="program-figure" data-photo="./assets/images/programs/economic-empowerment.jpg"
+                data-alt="Economic Empowerment and SME Support program" hidden></figure>
+            </div>
+          </article>
+          <article class="program-card program-detail program-detail--text" id="knowledge-rd" data-photo-host>
+            <div class="program-detail-text">
+              <svg class="program-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 5.5c2.5-1 5.5-1 8 0 2.5-1 5.5-1 8 0v13c-2.5-1-5.5-1-8 0-2.5-1-5.5-1-8 0z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" /><path d="M12 5.5v13" stroke="currentColor" stroke-width="1.6" />
+            </svg>
+              <h3 class="program-title">Information, Knowledge Management &amp; R&amp;D Advisory Services</h3>
+              <p class="program-desc">The program broadens APSDI&#8217;s knowledge base on peace, reconciliation and economic empowerment. By creating a platform for information sharing between the research community and policy decision-makers, it addresses major environmental and development issues through specialised workshops and seminars.</p>
+            </div>
+            <div class="program-figures" hidden>
+              <figure class="program-figure" data-photo="./assets/images/programs/knowledge-rd.jpg"
+                data-alt="Information, Knowledge Management and RandD Advisory Services program" hidden></figure>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="cta-banner-inner">
+        <h2 class="cta-banner-title">Building resilience requires partnership.</h2>
+        <p class="cta-banner-text">
+          We welcome partnerships with donors, government institutions, UN
+          agencies, civil society and the private sector to design and deliver
+          programs that last across the Democratic Republic of Congo.
+        </p>
+        <a href="contact.html" class="btn btn-invert btn-lg">Partner With Us</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <a href="index.html" class="brand" aria-label="APSDI home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" width="34" height="34">
+            <path d="M20 2 C20 2 6 14 6 24 A14 14 0 0 0 34 24 C34 14 20 2 20 2 Z" fill="none" stroke="currentColor"
+              stroke-width="2" />
+            <path d="M20 12 C20 12 12 19 12 25 A8 8 0 0 0 28 25 C28 19 20 12 20 12 Z" fill="currentColor" />
+          </svg>
+          </span>
+          <span class="brand-name footer-brand-name">APSDI</span>
+        </a>
+        <p class="footer-blurb">
+          Action for Peace, Health and Integrated Development — a Congolese
+          NGO building resilient, peaceful communities across the Democratic
+          Republic of Congo since 2022.
+        </p>
+      </div>
+
+      <nav class="footer-col" aria-label="Quick links">
+        <h3 class="footer-col-title">Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="strategic-plan.html">Strategic Plan</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Programs">
+        <h3 class="footer-col-title">Programs</h3>
+        <ul>
+          <li><a href="programs.html#health">Health</a></li>
+          <li><a href="programs.html#gbv-response">Social Protection &amp; GBV</a></li>
+          <li><a href="programs.html#peace-cohesion">Peace &amp; Regional Integration</a></li>
+          <li><a href="programs.html#food-security">Food Security &amp; Nutrition</a></li>
+          <li><a href="programs.html#environment">Environment &amp; Resources</a></li>
+          <li><a href="programs.html#economic-empowerment">Economic Empowerment</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col footer-contact">
+        <h3 class="footer-col-title">Contact</h3>
+        <address>
+          <!-- Email marked "to be replaced" in source content — swap once confirmed -->
+          <a href="mailto:apsdiorg@gmail.com">apsdiorg@gmail.com</a><br>
+          <a href="tel:+243818238601">+243 818 238 601</a><br>
+          Bukavu, South Kivu Province<br>
+          Democratic Republic of Congo
+        </address>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 APSDI — Action for Peace, Health and Integrated Development. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

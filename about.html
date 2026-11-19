@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Core -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | APSDI</title>
+  <meta name="description"
+    content="APSDI is a Congolese non-profit NGO founded in 2022 and headquartered in Bukavu, South Kivu. Learn about our vision, mission, thematic areas, core values and governance.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon / app icons -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#16232E">
+
+  <!-- Open Graph / social sharing (og:image and canonical become full URLs once the domain is set) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="APSDI">
+  <meta property="og:title" content="About Us | APSDI">
+  <meta property="og:description" content="APSDI is a Congolese non-profit NGO founded in 2022 and headquartered in Bukavu, South Kivu. Learn about our vision, mission, thematic areas, core values and governance.">
+  <meta property="og:image" content="assets/og-cover.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts: preconnect first, then a single stylesheet request -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Deferred JS — parsed but executed after DOM, no render block -->
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+
+      <a href="index.html" class="brand" aria-label="APSDI home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="36" height="36">
+            <path d="M20 2 C20 2 6 14 6 24 A14 14 0 0 0 34 24 C34 14 20 2 20 2 Z" fill="none" stroke="currentColor"
+              stroke-width="2" />
+            <path d="M20 12 C20 12 12 19 12 25 A8 8 0 0 0 28 25 C28 19 20 12 20 12 Z" fill="currentColor" />
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">APSDI</span>
+          <span class="brand-tagline">Peace · Health · Integrated Development</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul class="nav-list">
+
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-controls="dropdown-about" aria-current="page">
+              About
+              <svg class="chevron" viewBox="0 0 12 8" width="10" height="7" aria-hidden="true">
+                <path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" />
+              </svg>
+            </button>
+            <div class="dropdown" id="dropdown-about">
+              <a href="about.html#who-we-are" class="dropdown-link">
+                <span class="dropdown-link-title">Who We Are</span>
+                <span class="dropdown-link-desc">Legal status, mandate and identity</span>
+              </a>
+              <a href="about.html#vision-mission" class="dropdown-link">
+                <span class="dropdown-link-title">Vision &amp; Mission</span>
+                <span class="dropdown-link-desc">What we're working toward</span>
+              </a>
+              <a href="about.html#core-values" class="dropdown-link">
+                <span class="dropdown-link-title">Core Values</span>
+                <span class="dropdown-link-desc">The principles behind our work</span>
+              </a>
+              <a href="about.html#governance" class="dropdown-link">
+                <span class="dropdown-link-title">Governance</span>
+                <span class="dropdown-link-desc">Board, assembly &amp; oversight</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-controls="dropdown-programs">
+              Programs
+              <svg class="chevron" viewBox="0 0 12 8" width="10" height="7" aria-hidden="true">
+                <path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" />
+              </svg>
+            </button>
+            <div class="dropdown" id="dropdown-programs">
+              <a href="programs.html#peace-governance" class="dropdown-link">
+                <span class="dropdown-link-title">Peace &amp; Governance</span>
+                <span class="dropdown-link-desc">Social cohesion, protection, regional integration</span>
+              </a>
+              <a href="programs.html#health-nutrition" class="dropdown-link">
+                <span class="dropdown-link-title">Health &amp; Nutrition</span>
+                <span class="dropdown-link-desc">Community health, food security, WASH</span>
+              </a>
+              <a href="programs.html#environment-livelihoods" class="dropdown-link">
+                <span class="dropdown-link-title">Environment &amp; Livelihoods</span>
+                <span class="dropdown-link-desc">Natural resources, SMEs, digital inclusion</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="programs.html" class="dropdown-link dropdown-link-all">
+                <span class="dropdown-link-title">View all programs →</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="strategic-plan.html" class="nav-link">Strategic Plan</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="team.html" class="nav-link">Team</a>
+          </li>
+
+          <!-- Publications: hidden until there are reports to share.
+          <li class="nav-item">
+            <a href="publications.html" class="nav-link">Publications</a>
+          </li>
+          -->
+
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <a href="contact.html" class="btn btn-cta nav-cta">Partner With Us</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero page-hero" id="who-we-are">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">About APSDI</p>
+          <h1 class="hero-title">Who we are.</h1>
+          <p class="hero-lead">
+            APSDI is a non-profit NGO governed by Decree-Law No. 004/2001, operating in the Democratic Republic of Congo since 2022. Headquartered in Bukavu, South Kivu, it has a mandate to operate throughout the entire country.
+          </p>
+          <p class="hero-meta">Established 2022 &nbsp;·&nbsp; Headquartered in Bukavu &nbsp;·&nbsp; Nationwide mandate</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission" id="vision-mission">
+      <div class="mission-inner" data-photo-host>
+
+        <!-- Photo space: appears once assets/images/who-we-are.jpg exists -->
+        <div class="mission-visual" data-photo="./assets/images/who-we-are.jpg" data-alt="APSDI's work with communities"
+          data-class="mission-photo" data-width="480" data-height="600" hidden></div>
+
+        <div class="mission-content">
+          <p class="eyebrow">Vision &amp; Mission</p>
+          <h2 class="mission-title">Dignity and lasting resilience for every community.</h2>
+
+          <div class="mission-objective">
+            <span class="mission-objective-label">Our Vision</span>
+            <p class="mission-objective-text">
+              A future where integrated communities throughout the Democratic
+              Republic of Congo enjoy their human dignity and sustainable resilience.
+            </p>
+          </div>
+
+          <div class="mission-objective">
+            <span class="mission-objective-label">Our Mission</span>
+            <p class="mission-objective-text">
+              APSDI drives development through an integrated approach that links
+              environmental protection, food security, public health promotion and
+              social protection with peace promotion, grounded in gender mainstreaming.
+            </p>
+          </div>
+
+          <div class="mission-objective">
+            <span class="mission-objective-label">Overall Objective</span>
+            <p class="mission-objective-text">
+              To enhance the socio-economic resilience of conflict-affected
+              populations in the Democratic Republic of Congo by fostering peaceful
+              coexistence, protecting natural resources, improving health outcomes,
+              strengthening food security and mainstreaming gender within community
+              development programs.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="programs" id="identity">
+      <div class="programs-inner">
+
+        <div class="section-heading">
+          <p class="eyebrow">Institutional Identity</p>
+          <h2 class="section-title">Seven principles define who we are.</h2>
+          <p class="section-lead">
+            They shape how APSDI positions itself and how it works alongside communities and partners.
+          </p>
+        </div>
+
+        <div class="programs-grid">
+
+          <article class="program-card">
+            <h3 class="program-title">Integrity &amp; Apolitical Engagement</h3>
+            <p class="program-desc">Operating with strict neutrality; actions driven exclusively by community needs.</p>
+          </article>
+
+          <article class="program-card">
+            <h3 class="program-title">Equity &amp; Social Justice</h3>
+            <p class="program-desc">Advocating for equal access to healthcare and essential rights for the most vulnerable.</p>
+          </article>
+
+          <article class="program-card">
+            <h3 class="program-title">Human Dignity &amp; Resilience</h3>
+            <p class="program-desc">Moving communities from vulnerability to sustainable resilience.</p>
+          </article>
+
+          <article class="program-card">
+            <h3 class="program-title">Community Participation</h3>
+            <p class="program-desc">Fostering inclusive, community-led development to ensure local ownership.</p>
+          </article>
+
+          <article class="program-card">
+            <h3 class="program-title">Solidarity &amp; Inclusion</h3>
+            <p class="program-desc">Unwavering support for marginalised groups, ensuring no one is left behind.</p>
+          </article>
+
+          <article class="program-card">
+            <h3 class="program-title">Peace &amp; Reconciliation</h3>
+            <p class="program-desc">Using dialogue and mediation to transform diversity into social cohesion.</p>
+          </article>
+
+          <article class="program-card">
+            <h3 class="program-title">Environmental Stewardship</h3>
+            <p class="program-desc">Responsible management of biodiversity — environmental health is human well-being.</p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="programs section-alt" id="thematic-areas">
+      <div class="programs-inner">
+
+        <div class="section-heading">
+          <p class="eyebrow">Thematic Areas</p>
+          <h2 class="section-title">Eight areas of intervention, each with clear expected results.</h2>
+          <p class="section-lead">
+            Every thematic area pairs concrete interventions with the results APSDI commits to achieving.
+          </p>
+        </div>
+
+        <div class="programs-grid programs-grid-2">
+
+          <article class="program-card thematic-card">
+            <h3 class="program-title">1. Peace Promotion &amp; Social Cohesion</h3>
+            <span class="mission-objective-label">Key interventions</span>
+            <p class="program-desc">Promote dialogue, mediation and community peacebuilding among host communities, IDPs, refugees and returnees; strengthen the capacity of local leaders, women, youth and CSOs in conflict prevention and resolution.</p>
+            <span class="mission-objective-label">Expected results</span>
+            <p class="program-desc">Community peace committees strengthened; reduced conflicts over land, natural resources and services; increased participation of women and youth in peace processes.</p>
+          </article>
+
+          <article class="program-card thematic-card">
+            <h3 class="program-title">2. Environmental Protection &amp; Climate Resilience</h3>
+            <span class="mission-objective-label">Key interventions</span>
+            <p class="program-desc">Promote sustainable natural resource management, climate-smart agriculture, restoration of community forests, improved waste management and alternative energy solutions.</p>
+            <span class="mission-objective-label">Expected results</span>
+            <p class="program-desc">Increased tree planting and forest restoration; improved climate-smart practices and waste management; reduced deforestation and greater environmental awareness.</p>
+          </article>
+
+          <article class="program-card thematic-card">
+            <h3 class="program-title">3. Health Promotion</h3>
+            <span class="mission-objective-label">Key interventions</span>
+            <p class="program-desc">Strengthen preventive and community-based health services, focusing on maternal and child health, nutrition, sexual and reproductive health, hygiene, sanitation and disease prevention.</p>
+            <span class="mission-objective-label">Expected results</span>
+            <p class="program-desc">Increased immunisation and health awareness; reduced preventable diseases; improved hygiene and sanitation; strengthened community health worker capacity.</p>
+          </article>
+
+          <article class="program-card thematic-card">
+            <h3 class="program-title">4. Food Security &amp; Nutrition</h3>
+            <span class="mission-objective-label">Key interventions</span>
+            <p class="program-desc">Improve sustainable crop and livestock production, post-harvest handling and storage, household income diversification and nutrition education.</p>
+            <span class="mission-objective-label">Expected results</span>
+            <p class="program-desc">Increased agricultural productivity; diversified household incomes; improved maternal and child nutrition; reduced food insecurity among vulnerable households.</p>
+          </article>
+
+          <article class="program-card thematic-card">
+            <h3 class="program-title">5. Gender Equality &amp; Women&#8217;s Empowerment</h3>
+            <span class="mission-objective-label">Key interventions</span>
+            <p class="program-desc">Promote women&#8217;s participation in leadership, decision-making and economic activities, while strengthening prevention of and response to gender-based violence and male engagement.</p>
+            <span class="mission-objective-label">Expected results</span>
+            <p class="program-desc">Increased women&#8217;s participation in leadership; improved access to livelihoods; stronger GBV prevention and response; increased male support for gender equality.</p>
+          </article>
+
+          <article class="program-card thematic-card">
+            <h3 class="program-title">6. Socio-economic Development &amp; Livelihoods</h3>
+            <span class="mission-objective-label">Key interventions</span>
+            <p class="program-desc">Provide vocational and entrepreneurship training, strengthen financial inclusion, support MSMEs and savings groups, and improve access to markets and livelihood opportunities.</p>
+            <span class="mission-objective-label">Expected results</span>
+            <p class="program-desc">Youth and women acquire marketable skills; businesses established or strengthened; savings and loan groups expanded; increased household income and economic resilience.</p>
+          </article>
+
+          <article class="program-card thematic-card">
+            <h3 class="program-title">7. Youth Empowerment</h3>
+            <span class="mission-objective-label">Key interventions</span>
+            <p class="program-desc">Increase youth participation in peacebuilding, entrepreneurship, civic engagement, employment and environmental conservation through skills development and youth-led initiatives.</p>
+            <span class="mission-objective-label">Expected results</span>
+            <p class="program-desc">Youth-led businesses established; youth peace ambassadors trained; increased employment and civic participation; greater youth engagement in environmental protection.</p>
+          </article>
+
+          <article class="program-card thematic-card">
+            <h3 class="program-title">8. Community Governance</h3>
+            <span class="mission-objective-label">Key interventions</span>
+            <p class="program-desc">Strengthen community development committees, accountability mechanisms, citizen participation and collaboration between communities and local authorities in development planning.</p>
+            <span class="mission-objective-label">Expected results</span>
+            <p class="program-desc">Functional community development structures; greater transparency and accountability; increased citizen participation; improved collaboration between communities and local authorities.</p>
+          </article>
+
+        </div>
+
+        <a href="programs.html" class="btn btn-ghost programs-cta">See How We Deliver: Our Programs</a>
+
+      </div>
+    </section>
+
+    <section class="values" id="core-values">
+      <div class="values-inner">
+
+        <div class="section-heading section-heading-dark">
+          <p class="eyebrow eyebrow-dark">What We Stand For</p>
+          <h2 class="section-title section-title-dark">Ten values guide every program.</h2>
+          <p class="section-lead section-lead-dark">
+            They shape how staff engage communities, how partners are chosen, and how progress is measured.
+          </p>
+        </div>
+
+        <div class="values-grid">
+
+          <div class="value-item">
+            <h3 class="value-title">Peace &amp; Social Cohesion</h3>
+            <p class="value-desc">Promoting dialogue, reconciliation, non-violence, conflict prevention and peaceful coexistence among communities.</p>
+          </div>
+
+          <div class="value-item">
+            <h3 class="value-title">Human Dignity &amp; Human Rights</h3>
+            <p class="value-desc">Respecting the rights, dignity and equal worth of every person without discrimination.</p>
+          </div>
+
+          <div class="value-item">
+            <h3 class="value-title">Gender Equality &amp; Social Inclusion</h3>
+            <p class="value-desc">Ensuring equal opportunities, participation and benefits for women, men, youth, persons with disabilities and marginalised groups.</p>
+          </div>
+
+          <div class="value-item">
+            <h3 class="value-title">Community Ownership &amp; Participation</h3>
+            <p class="value-desc">Empowering communities to lead decision-making, planning, implementation and monitoring of development activities.</p>
+          </div>
+
+          <div class="value-item">
+            <h3 class="value-title">Environmental Stewardship</h3>
+            <p class="value-desc">Protecting natural resources and promoting climate resilience, biodiversity conservation and sustainable environmental practices.</p>
+          </div>
+
+          <div class="value-item">
+            <h3 class="value-title">Integrity, Transparency &amp; Accountability</h3>
+            <p class="value-desc">Managing resources ethically, transparently and responsibly while remaining accountable to beneficiaries, partners and donors.</p>
+          </div>
+
+          <div class="value-item">
+            <h3 class="value-title">Resilience &amp; Sustainable Development</h3>
+            <p class="value-desc">Strengthening individual and institutional capacity to withstand shocks and sustain development gains beyond the project period.</p>
+          </div>
+
+          <div class="value-item">
+            <h3 class="value-title">Partnership &amp; Collaboration</h3>
+            <p class="value-desc">Working closely with government institutions, civil society, UN agencies, communities and the private sector to achieve shared goals.</p>
+          </div>
+
+          <div class="value-item">
+            <h3 class="value-title">Innovation &amp; Learning</h3>
+            <p class="value-desc">Promoting creative solutions, evidence-based programming, continuous learning and adaptive management.</p>
+          </div>
+
+          <div class="value-item">
+            <h3 class="value-title">Equity &amp; Justice</h3>
+            <p class="value-desc">Ensuring fair access to services, opportunities, resources and justice, particularly for vulnerable and marginalised populations.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="governance" id="governance">
+      <div class="governance-inner">
+
+        <div class="section-heading">
+          <p class="eyebrow">Governance</p>
+          <h2 class="section-title">Built on transparency and shared oversight.</h2>
+          <p class="section-lead">
+            Transparency is built into our statutory structure: a General Assembly, a Board of Directors and a Supervisory Board responsible for administrative and financial oversight.
+          </p>
+        </div>
+
+
+        <div class="governance-grid">
+
+          <div class="governance-card">
+            <svg class="governance-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="8.5" cy="8.5" r="3" fill="none" stroke="currentColor" stroke-width="1.6" /><circle cx="16" cy="9.5" r="2.4" fill="none" stroke="currentColor" stroke-width="1.6" /><path d="M3 20c0-3 2.5-5 5.5-5s5.5 2 5.5 5M14 20c0-2.3 1.9-4.2 4.2-4.2S21 17.7 21 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+            </svg>
+            <h3 class="governance-title">General Assembly</h3>
+            <p class="governance-desc">The organisation's members convene to set overall direction and provide strategic
+              oversight.</p>
+          </div>
+
+          <div class="governance-card">
+            <svg class="governance-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="4" y="3.5" width="16" height="17" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6" /><path d="M8 8.5h8M8 12h8M8 15.5h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+            </svg>
+            <h3 class="governance-title">Board of Directors</h3>
+            <p class="governance-desc">Guides strategy and decision-making between assembly sessions.</p>
+          </div>
+
+          <div class="governance-card">
+            <svg class="governance-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3 19 6v5.5c0 4.5-3 7.7-7 8.5-4-0.8-7-4-7-8.5V6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" /><path d="M9 12l2 2 4-4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <h3 class="governance-title">Supervisory Board</h3>
+            <p class="governance-desc">Responsible for administrative and financial oversight, ensuring transparency and
+              accountability.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="cta-banner-inner">
+        <h2 class="cta-banner-title">Building resilience requires partnership.</h2>
+        <p class="cta-banner-text">
+          We welcome partnerships with donors, government institutions, UN
+          agencies, civil society and the private sector to design and deliver
+          programs that last across the Democratic Republic of Congo.
+        </p>
+        <a href="contact.html" class="btn btn-invert btn-lg">Partner With Us</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <a href="index.html" class="brand" aria-label="APSDI home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" width="34" height="34">
+            <path d="M20 2 C20 2 6 14 6 24 A14 14 0 0 0 34 24 C34 14 20 2 20 2 Z" fill="none" stroke="currentColor"
+              stroke-width="2" />
+            <path d="M20 12 C20 12 12 19 12 25 A8 8 0 0 0 28 25 C28 19 20 12 20 12 Z" fill="currentColor" />
+          </svg>
+          </span>
+          <span class="brand-name footer-brand-name">APSDI</span>
+        </a>
+        <p class="footer-blurb">
+          Action for Peace, Health and Integrated Development — a Congolese
+          NGO building resilient, peaceful communities across the Democratic
+          Republic of Congo since 2022.
+        </p>
+      </div>
+
+      <nav class="footer-col" aria-label="Quick links">
+        <h3 class="footer-col-title">Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="strategic-plan.html">Strategic Plan</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Programs">
+        <h3 class="footer-col-title">Programs</h3>
+        <ul>
+          <li><a href="programs.html#health">Health</a></li>
+          <li><a href="programs.html#gbv-response">Social Protection &amp; GBV</a></li>
+          <li><a href="programs.html#peace-cohesion">Peace &amp; Regional Integration</a></li>
+          <li><a href="programs.html#food-security">Food Security &amp; Nutrition</a></li>
+          <li><a href="programs.html#environment">Environment &amp; Resources</a></li>
+          <li><a href="programs.html#economic-empowerment">Economic Empowerment</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col footer-contact">
+        <h3 class="footer-col-title">Contact</h3>
+        <address>
+          <!-- Email marked "to be replaced" in source content — swap once confirmed -->
+          <a href="mailto:apsdiorg@gmail.com">apsdiorg@gmail.com</a><br>
+          <a href="tel:+243818238601">+243 818 238 601</a><br>
+          Bukavu, South Kivu Province<br>
+          Democratic Republic of Congo
+        </address>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 APSDI — Action for Peace, Health and Integrated Development. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

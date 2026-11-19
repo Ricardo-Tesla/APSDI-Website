@@ -1,0 +1,13 @@
+# Working files — kept on your computer, never pushed to GitHub or put online
+*.docx
+~$*
+trial.py
+PHOTOS-TO-ADD.txt
+new-photos/
+old-photos/
+.claude-tmp/
+
+# System files
+Thumbs.db
+desktop.ini
+.DS_Store

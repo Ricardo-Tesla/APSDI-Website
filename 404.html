@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Core -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | APSDI</title>
+  <meta name="description"
+    content="The page you are looking for could not be found.">
+  <meta name="robots" content="noindex">
+
+  <!-- Favicon / app icons -->
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#16232E">
+
+  <!-- Open Graph / social sharing (og:image and canonical become full URLs once the domain is set) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="APSDI">
+  <meta property="og:title" content="Page Not Found | APSDI">
+  <meta property="og:description" content="The page you are looking for could not be found.">
+  <meta property="og:image" content="assets/og-cover.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts: preconnect first, then a single stylesheet request -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- Deferred JS — parsed but executed after DOM, no render block -->
+  <script src="/js/main.js" defer></script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+
+      <a href="/" class="brand" aria-label="APSDI home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="36" height="36">
+            <path d="M20 2 C20 2 6 14 6 24 A14 14 0 0 0 34 24 C34 14 20 2 20 2 Z" fill="none" stroke="currentColor"
+              stroke-width="2" />
+            <path d="M20 12 C20 12 12 19 12 25 A8 8 0 0 0 28 25 C28 19 20 12 20 12 Z" fill="currentColor" />
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">APSDI</span>
+          <span class="brand-tagline">Peace · Health · Integrated Development</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul class="nav-list">
+
+          <li class="nav-item">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-controls="dropdown-about">
+              About
+              <svg class="chevron" viewBox="0 0 12 8" width="10" height="7" aria-hidden="true">
+                <path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" />
+              </svg>
+            </button>
+            <div class="dropdown" id="dropdown-about">
+              <a href="/about.html#who-we-are" class="dropdown-link">
+                <span class="dropdown-link-title">Who We Are</span>
+                <span class="dropdown-link-desc">Legal status, mandate and identity</span>
+              </a>
+              <a href="/about.html#vision-mission" class="dropdown-link">
+                <span class="dropdown-link-title">Vision &amp; Mission</span>
+                <span class="dropdown-link-desc">What we're working toward</span>
+              </a>
+              <a href="/about.html#core-values" class="dropdown-link">
+                <span class="dropdown-link-title">Core Values</span>
+                <span class="dropdown-link-desc">The principles behind our work</span>
+              </a>
+              <a href="/about.html#governance" class="dropdown-link">
+                <span class="dropdown-link-title">Governance</span>
+                <span class="dropdown-link-desc">Board, assembly &amp; oversight</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-controls="dropdown-programs">
+              Programs
+              <svg class="chevron" viewBox="0 0 12 8" width="10" height="7" aria-hidden="true">
+                <path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" />
+              </svg>
+            </button>
+            <div class="dropdown" id="dropdown-programs">
+              <a href="/programs.html#peace-governance" class="dropdown-link">
+                <span class="dropdown-link-title">Peace &amp; Governance</span>
+                <span class="dropdown-link-desc">Social cohesion, protection, regional integration</span>
+              </a>
+              <a href="/programs.html#health-nutrition" class="dropdown-link">
+                <span class="dropdown-link-title">Health &amp; Nutrition</span>
+                <span class="dropdown-link-desc">Community health, food security, WASH</span>
+              </a>
+              <a href="/programs.html#environment-livelihoods" class="dropdown-link">
+                <span class="dropdown-link-title">Environment &amp; Livelihoods</span>
+                <span class="dropdown-link-desc">Natural resources, SMEs, digital inclusion</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="/programs.html" class="dropdown-link dropdown-link-all">
+                <span class="dropdown-link-title">View all programs →</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="/strategic-plan.html" class="nav-link">Strategic Plan</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/team.html" class="nav-link">Team</a>
+          </li>
+
+          <!-- Publications: hidden until there are reports to share.
+          <li class="nav-item">
+            <a href="/publications.html" class="nav-link">Publications</a>
+          </li>
+          -->
+
+          <li class="nav-item">
+            <a href="/contact.html" class="nav-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <a href="/contact.html" class="btn btn-cta nav-cta">Partner With Us</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero page-hero" id="top">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Error 404</p>
+          <h1 class="hero-title">This page could not be found.</h1>
+          <p class="hero-lead">
+            The link may be out of date, or the page may have moved. You can head back to the home page or explore our work below.
+          </p>
+          <div class="hero-actions">
+            <a href="/" class="btn btn-primary btn-lg">Back to Home</a>
+            <a href="/programs.html" class="btn btn-ghost btn-lg">Explore Our Programs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <a href="/" class="brand" aria-label="APSDI home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" width="34" height="34">
+            <path d="M20 2 C20 2 6 14 6 24 A14 14 0 0 0 34 24 C34 14 20 2 20 2 Z" fill="none" stroke="currentColor"
+              stroke-width="2" />
+            <path d="M20 12 C20 12 12 19 12 25 A8 8 0 0 0 28 25 C28 19 20 12 20 12 Z" fill="currentColor" />
+          </svg>
+          </span>
+          <span class="brand-name footer-brand-name">APSDI</span>
+        </a>
+        <p class="footer-blurb">
+          Action for Peace, Health and Integrated Development — a Congolese
+          NGO building resilient, peaceful communities across the Democratic
+          Republic of Congo since 2022.
+        </p>
+      </div>
+
+      <nav class="footer-col" aria-label="Quick links">
+        <h3 class="footer-col-title">Quick Links</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/programs.html">Programs</a></li>
+          <li><a href="/strategic-plan.html">Strategic Plan</a></li>
+          <li><a href="/team.html">Team</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Programs">
+        <h3 class="footer-col-title">Programs</h3>
+        <ul>
+          <li><a href="/programs.html#health">Health</a></li>
+          <li><a href="/programs.html#gbv-response">Social Protection &amp; GBV</a></li>
+          <li><a href="/programs.html#peace-cohesion">Peace &amp; Regional Integration</a></li>
+          <li><a href="/programs.html#food-security">Food Security &amp; Nutrition</a></li>
+          <li><a href="/programs.html#environment">Environment &amp; Resources</a></li>
+          <li><a href="/programs.html#economic-empowerment">Economic Empowerment</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col footer-contact">
+        <h3 class="footer-col-title">Contact</h3>
+        <address>
+          <!-- Email marked "to be replaced" in source content — swap once confirmed -->
+          <a href="mailto:apsdiorg@gmail.com">apsdiorg@gmail.com</a><br>
+          <a href="tel:+243818238601">+243 818 238 601</a><br>
+          Bukavu, South Kivu Province<br>
+          Democratic Republic of Congo
+        </address>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 APSDI — Action for Peace, Health and Integrated Development. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

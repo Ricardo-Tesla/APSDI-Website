@@ -1,0 +1,17 @@
+# Cloudflare Pages response headers — https://developers.cloudflare.com/pages/configuration/headers/
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Photos and icons: browsers re-check hourly, so newly added photos show up quickly
+/assets/*
+  Cache-Control: public, max-age=3600
+
+# Styles and scripts: refreshed within an hour of an update
+/css/*
+  Cache-Control: public, max-age=3600
+/js/*
+  Cache-Control: public, max-age=3600
